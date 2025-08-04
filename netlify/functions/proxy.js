@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 exports.handler = async (event) => {
-  const backendUrl = "https://bh.directsolutions.store";
+  const backendUrl = "http://bh.directsolutions.store";
   const clientIp = event.headers['x-nf-client-connection-ip'] || '127.0.0.1';
   const targetUrl = backendUrl + event.path;
   const forwardHeaders = {
